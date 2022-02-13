@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const DashboardItems = () => {
 
     return (
-        <div  >
+        <div className="dashboardItems" >
             <Link to='/home'><h5>Home</h5></Link>
 
             <div>
