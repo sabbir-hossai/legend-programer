@@ -16,6 +16,7 @@ const Dashboard = () => {
                 <div class="row  ">
 
                     <div className=" col-lg-3   DashItem ">
+                        <Link to="/home"><h6>Home</h6> </Link>
                         <Link to="/Dashboard/makeAdmin"><h6>Make Admin</h6> </Link>
                         <Link to="/Dashboard/addProduct"> <h6>Add Product</h6> </Link>
                         <Link to="/Dashboard/payMentMethod"><h6>Pay</h6></Link>
