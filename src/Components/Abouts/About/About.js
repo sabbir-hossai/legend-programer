@@ -5,6 +5,7 @@ import food1 from '../../../images/food1.jpg';
 import hotel from '../../../images/hotel.jpg';
 import rest from '../../../images/rest.jpg';
 import sabbir from '../../../images/sabbir.jpg';
+import towhidul from '../../../images/towhidol.jpg';
 
 import './About.css';
 import Map from '../Map/Map';
@@ -46,8 +47,8 @@ const About = () => {
                             </div>
                         </div>
                         <div className="col">
-                            <div className="card">
-                                <img src="..." className="card-img-top" alt="..." />
+                            <div className=" ">
+                                <img src="..." className="card-img-top Co-founderImg" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">Maruful Tamal</h5>
                                     <p className="card-text">Co-founder and Chief Executive</p>
@@ -55,8 +56,8 @@ const About = () => {
                             </div>
                         </div>
                         <div className="col">
-                            <div className="card">
-                                <img src="..." className="card-img-top" alt="..." />
+                            <div className=" ">
+                                <img src="..." className="card-img-top Co-founderImg" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">Mahbubur Rahman Emon</h5>
                                     <p className="card-text">Managing Director</p>
@@ -64,8 +65,8 @@ const About = () => {
                             </div>
                         </div>
                         <div className="col">
-                            <div className="card">
-                                <img src="../../../images/delevery.jpg" className="card-img-top" alt="..." />
+                            <div className=" ">
+                                <img src={towhidul} className="card-img-top Co-founderImg" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">Towhidul Islam</h5>
                                     <p className="card-text">Co-founder, Chairman</p>
