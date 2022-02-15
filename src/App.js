@@ -8,6 +8,7 @@ import MyOrder from "./Components/Dashboards/MyOrder/MyOrder";
 import PaymentMethod from "./Components/Dashboards/PayMentMethod/PaymentMethod";
 import Reviews from "./Components/Dashboards/reviews/Reviews";
 import Home from "./Components/Homes/Home/Home";
+import Login from "./Components/Login/Login/Login";
 // import { render } from "react-dom";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/about" element={<About />} />
+          <Route path="/login" element={<Login/>} />
           {/* nestedRoute  */}
 
           <Route path="/dashboard" element={<Dashboard />}>
