@@ -1,0 +1,35 @@
+.button{
+    /* background-color: #f44336; */
+    background-color: #f7345e;
+    padding: 8px;
+    border-radius: 8px;
+    color:white;
+    width:130px;
+    border:lightgrey;
+}
+.designs img{
+    height:250px;
+}
+
+.cars{
+    /* background-color; */
+}
+
+.finals{
+    background-color:azure;
+    
+}
+.halka{
+    font-size: 28px;
+    font-weight: 600;
+}
+.skip{
+    text-align: left;
+}
+.texts{
+    font-weight: 600;
+    text-align: left;
+}
+.mans{
+    color:brown;
+}
