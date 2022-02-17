@@ -29,6 +29,16 @@ const Navbar = () => {
                                     About
                                 </NavLink>
                             </li>
+                            <li className="nav-item">
+                                <NavLink to="/addfoods" className="nav-link active" >
+                                    Add-Food
+                                </NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink to="/addroom" className="nav-link active" >
+                                    Add-Room
+                                </NavLink>
+                            </li>
                         </ul>
                         <form className="d-flex">
                             {

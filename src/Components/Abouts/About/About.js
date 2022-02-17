@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../../Homes/Navbar/Navbar';
+// import Navbar from '../../Homes/Navbar/Navbar';
 import food from '../../../images/food.jpg';
 import food1 from '../../../images/food1.jpg';
 import hotel from '../../../images/hotel.jpg';
@@ -13,7 +13,7 @@ import Map from '../Map/Map';
 const About = () => {
     return (
         <div>
-            <Navbar></Navbar>
+            {/* <Navbar></Navbar> */}
             {/* top section  */}
             <div className='container m-1'>
                 <div className="row  ">

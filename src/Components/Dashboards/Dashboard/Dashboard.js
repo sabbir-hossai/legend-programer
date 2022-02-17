@@ -1,6 +1,6 @@
 import React from 'react';
-import DashboardItems from '../reviews/Reviews';
-import MyOrder from '../MyOrder/MyOrder';
+// import DashboardItems from '../reviews/Reviews';
+// import MyOrder from '../MyOrder/MyOrder';
 import './Dashboard.css';
 import {
     Link,
@@ -22,6 +22,7 @@ const Dashboard = () => {
                         <Link to="/Dashboard/payMentMethod"><h6>Pay</h6></Link>
                         <Link to="/Dashboard/MyOrders"><h6>My Order </h6> </Link>
                         <Link to="/Dashboard/Reviews" ><h6>Reviews</h6></Link>
+                        <Link to="/Dashboard/addfoods" ><h6>Add-Food</h6></Link>
                     </div>
                     <div class=" col-9">
                         <Outlet />
