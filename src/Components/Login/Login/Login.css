@@ -121,6 +121,9 @@ small {
 .far.fa-user {
 	font-size: 13px;
 }
+.register {
+	text-decoration: none;
+}
 
 @media (min-width: 767px) {
 	.bn {

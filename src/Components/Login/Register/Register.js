@@ -1,8 +1,9 @@
+
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import "./Login.css"
+import "../Login/Login.css"
 
-const Login = () => {
+const Register = () => {
     const [loginData, setLoginData] = useState({})
     const handleOnChange = e =>{
         const field = e.target.name;
@@ -13,10 +14,13 @@ const Login = () => {
 
     }
     const handleLoginSubmit = e =>{
-        alert('hello world')
+        if (loginData.password !== loginData.password2){
+            alert("Your password didn't match");
+            return
+        }
         e.preventDefault();
     }
-    return (
+    return ( 
         <div class="container">
         <div class="row d-flex justify-content-center mt-5">
             <div class="col-12 col-md-8 col-lg-6 col-xl-5">
@@ -29,26 +33,25 @@ const Login = () => {
                     </div>
                     <div class="division">
                         <div class="row">
-                            <div class="col-3">
-                                <div class="line l"></div>
-                            </div>
+                           
                             
-                            <div class="col-6"><span>Email and Password</span></div>
-                            <div class="col-3">
-                                <div class="line r"></div>
-                            </div>
+                            <div class="col-12"><span>Register</span></div>
+                            <hr class="w-50 m-auto" />
+                           
                         </div>
                     </div>
                     <form class="myform" onSubmit={ handleLoginSubmit }>
+                        <div class="form-group"> <input onChange={handleOnChange} type="text" class="form-control" placeholder="Your Name"/> </div>
                         <div class="form-group"> <input onChange={handleOnChange} type="email" class="form-control" placeholder="Email"/> </div>
                         <div class="form-group"> <input onChange={handleOnChange} type="password" class="form-control" placeholder="Password"/> </div>
+                        <div class="form-group"> <input onChange={handleOnChange} type="password2" class="form-control" placeholder="Re-Password"/> </div>
                         <div class="row">
                             <div class="col-md-6 col-12">
-                                <div class="form-group form-check"> <label class="form-check-label" for="exampleCheck1">Forget Password</label> </div>
+                                <div class="form-group form-check"> <label class="form-check-label" for="exampleCheck1"></label> </div>
                             </div>
-                            <div class="register col-md-6 col-12 bn "><NavLink   to="/register" style={{textDecoration: 'none'}}>New User? Please Register</NavLink>  </div>
+                            <div class="register col-md-6 col-12 bn "><NavLink   to="/login" style={{textDecoration: 'none'}}>Already Registered?Please Login </NavLink>  </div>
                         </div>
-                        <div class="form-group mt-3 "> <button type="submit" class="btn btn-block btn-primary btn-lg"><small><i class="far fa-user pr-2"></i> LOGIN</small></button> </div>
+                        <div class="form-group mt-3 "> <button type="submit" class="btn btn-block btn-primary btn-lg"><small><i class="far fa-user pr-2"></i> REGISTER</small></button> </div>
                     </form>
                 </div>
             </div>
@@ -57,4 +60,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default Register;

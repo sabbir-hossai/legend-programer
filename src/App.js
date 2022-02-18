@@ -9,6 +9,7 @@ import PaymentMethod from "./Components/Dashboards/PayMentMethod/PaymentMethod";
 import Reviews from "./Components/Dashboards/reviews/Reviews";
 import Home from "./Components/Homes/Home/Home";
 import Login from "./Components/Login/Login/Login";
+import Register from "./Components/Login/Register/Register";
 // import { render } from "react-dom";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login/>} />
+          <Route path="/register" element={<Register/>} />
           {/* nestedRoute  */}
 
           <Route path="/dashboard" element={<Dashboard />}>
