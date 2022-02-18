@@ -49,7 +49,7 @@ const HomeRoom = () => {
         </div>
 
 
-// const uri = "mongodb+srv://resturantService:JZfVjMN55W2vsbQH@cluster0.ev8on.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+
 
 
 
