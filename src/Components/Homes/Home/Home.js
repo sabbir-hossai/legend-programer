@@ -3,7 +3,6 @@ import Banner from '../Banner/Banner';
 import Footer from '../Footer/Footer';
 import Gallery from '../Gallery/Gallery';
 import HomeFood from '../HomeFood/HomeFood';
-// import Navbar from '../Navbar/Navbar';
 import Navbar from '../Navbar/Navbar';
 import HomeRoom from './HomeRoom/HomeRoom';
 
