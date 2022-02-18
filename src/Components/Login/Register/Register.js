@@ -1,10 +1,12 @@
 
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
 import "../Login/Login.css"
 
 const Register = () => {
     const [loginData, setLoginData] = useState({})
+    const { registerUser} = useAuth();
     const handleOnChange = e =>{
         const field = e.target.name;
         const value = e.target.value;
@@ -18,6 +20,7 @@ const Register = () => {
             alert("Your password didn't match");
             return
         }
+        registerUser(loginData.email, loginData.password);
         e.preventDefault();
     }
     return ( 

@@ -10,12 +10,14 @@ import Reviews from "./Components/Dashboards/reviews/Reviews";
 import Home from "./Components/Homes/Home/Home";
 import Login from "./Components/Login/Login/Login";
 import Register from "./Components/Login/Register/Register";
+import AuthProvider from "./contexts/AuthProvider/AuthProvider";
 // import { render } from "react-dom";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <AuthProvider>
+      
         <Routes>
           {/* normal route */}
           <Route path="/" element={<Home />} />
@@ -35,7 +37,9 @@ function App() {
             {/* <Route path=":id" element={<ProductDisplay />} /> */}
           </Route>
         </Routes>
-      </BrowserRouter>
+      
+      </AuthProvider>
+      
     </div >
   );
 }

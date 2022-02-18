@@ -1,8 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
 import './Navbar.css';
 
 const Navbar = () => {
+    const {user, logout} = useAuth();
     return (
         <div className=' ' >
             <nav className="navbar navbar-expand-lg navbar-expand-md navbar-light bg-light">
@@ -32,8 +34,12 @@ const Navbar = () => {
                         </ul>
                         <form className="d-flex">
                             {
+                                user?.email ?
+                                <button onClick={logout} className="btn btn-outline-success" type="submit">Logout</button> 
+
+                              :
                               <NavLink to="/login"><button className="btn btn-outline-success" type="submit">Login</button></NavLink>  
-                                // <button className="btn btn-outline-success" type="submit">Log out</button>
+                        
                             }
 
                         </form>
