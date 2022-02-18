@@ -7,16 +7,17 @@ import {
     Outlet,
 
 } from "react-router-dom";
+import Footer from '../../Homes/Footer/Footer';
 
 const Dashboard = () => {
     return (
         <div>
-            <h1 className='bg-secondary p-2'>Dashboard</h1>
+            <h1 className=' dashboardTitle p-2'>Dashboard</h1>
             <div className='container'>
                 <div class="row  ">
 
                     <div className=" col-lg-3   DashItem ">
-                        <Link to="/home"><h6>Home</h6> </Link>
+                        <Link to="/home"><h6 className=' DashboardItem'>Home</h6> </Link>
                         <Link to="/Dashboard/makeAdmin"><h6>Make Admin</h6> </Link>
                         <Link to="/Dashboard/addProduct"> <h6>Add Product</h6> </Link>
                         <Link to="/Dashboard/payMentMethod"><h6>Pay</h6></Link>
@@ -27,6 +28,9 @@ const Dashboard = () => {
                         <Outlet />
                     </div>
                 </div>
+            </div>
+            <div>
+                <Footer></Footer>
             </div>
 
         </div>
