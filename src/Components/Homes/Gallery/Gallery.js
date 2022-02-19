@@ -9,7 +9,7 @@ import img6 from '../../../images/hotel img/hotel 6.jpg'
 import './Gallery.css'
 const Gallery = () => {
     return (
-        <div className="container gallery">
+        <div className="gallery">
             <div>
                 <h2 className="text-center">Our Gallery House</h2>
             </div>
