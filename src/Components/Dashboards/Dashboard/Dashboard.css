@@ -1,4 +1,13 @@
-.DashItem{
-    border-right: 1px solid black;
-    padding: 10px;
+.dashboardTitle{
+    background-color: lightgray;
+    text-align: center;
 }
+.DashItem  {
+    border-right: 3px solid  gray;
+    /* padding: 10px; */
+    
+}
+.DashItem a{
+    text-decoration: none; 
+}
+ 

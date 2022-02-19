@@ -29,7 +29,7 @@ const Navbar = () => {
                                     About
                                 </NavLink>
                             </li>
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <NavLink to="/addfoods" className="nav-link active" >
                                     Add-Food
                                 </NavLink>
@@ -38,11 +38,11 @@ const Navbar = () => {
                                 <NavLink to="/addroom" className="nav-link active" >
                                     Add-Room
                                 </NavLink>
-                            </li>
+                            </li> */}
                         </ul>
                         <form className="d-flex">
                             {
-                              <NavLink to="/login"><button className="btn btn-outline-success" type="submit">Login</button></NavLink>  
+                                <NavLink to="/login"><button className="btn btn-outline-success" type="submit">Login</button></NavLink>
                                 // <button className="btn btn-outline-success" type="submit">Log out</button>
                             }
 
