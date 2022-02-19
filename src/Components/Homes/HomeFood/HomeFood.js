@@ -8,7 +8,7 @@ const HomeFood = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/food')
+        fetch('http://localhost:5000/foods')
             .then(res => res.json())
             .then(data => {
                 const sliceData = data.slice(0, 6)
