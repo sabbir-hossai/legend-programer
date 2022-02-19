@@ -9,7 +9,7 @@ const AddFood = () => {
     const onSubmit= (data) =>{
         // console.log(data)
       
-        axios.post('http://localhost:5000/food',data)
+        axios.post('http://localhost:5000/foods',data)
       .then(res=>{
           console.log(res)
            if(res.data.insertedId){
