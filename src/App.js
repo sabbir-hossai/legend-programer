@@ -11,7 +11,8 @@ import Home from "./Components/Homes/Home/Home";
 import Login from "./Components/Login/Login/Login";
 import Register from "./Components/Login/Register/Register";
 import AuthProvider from "./contexts/AuthProvider/AuthProvider";
-// import { render } from "react-dom";
+import { render } from "react-dom";
+
 
 function App() {
   return (

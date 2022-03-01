@@ -11,6 +11,7 @@ const useFirebase = () => {
     const auth = getAuth();
 
     const registerUser = (email, password , name) => {
+        console.log(email, password)
         createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
           // Signed in 

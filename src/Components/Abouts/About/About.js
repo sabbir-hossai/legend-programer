@@ -9,6 +9,7 @@ import towhidul from '../../../images/towhidol.jpg';
 
 import './About.css';
 import Map from '../Map/Map';
+import Footer from '../../Homes/Footer/Footer';
 
 const About = () => {
     return (
@@ -78,7 +79,10 @@ const About = () => {
             </div>
             {/* map  */}
             <div className=''>
-                <Map></Map>
+                {/* <Map></Map> */}
+            </div>
+            <div className=''>
+                <Footer></Footer>
             </div>
 
         </div>

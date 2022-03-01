@@ -25,6 +25,7 @@ const Register = () => {
         registerUser(loginData.email, loginData.password, loginData.name);
         console.log(registerUser);
         e.preventDefault();
+        e.target.reset();
     }
     return ( 
         <div class="container p-3 mt-4">

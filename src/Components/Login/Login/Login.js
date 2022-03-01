@@ -7,12 +7,12 @@ const Login = () => {
     const handleOnChange = e =>{
         const field = e.target.name;
         const value = e.target.value;
-        const newLoginData ={...loginData};
+        const newLoginData = { ...loginData };
         newLoginData[field] = value;
         setLoginData(newLoginData);
 
     }
-    const handleLoginSubmit = e =>{
+    const handleLoginSubmit = e => {
         alert('hello world')
         e.preventDefault();
     }
@@ -50,7 +50,7 @@ const Login = () => {
                 </div>
             </div>
         </div>
-    </div>
+        </div>
     );
 };
 
