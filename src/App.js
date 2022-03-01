@@ -1,4 +1,4 @@
-import { render } from "react-dom";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./Components/Abouts/About/About";
 import AddProduct from "./Components/Dashboards/AddProduct/AddProduct";
@@ -17,27 +17,27 @@ function App() {
   return (
     <div className="App">
       <AuthProvider>
-      
-        <Routes>
-          {/* normal route */}
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/login" element={<Login/>} />
-          <Route path="/register" element={<Register/>} />
-          {/* nestedRoute  */}
+          <BrowserRouter>
+            <Routes>
+              {/* normal route */}
+              <Route path="/" element={<Home />} />
+              <Route path="/home" element={<Home />} />
+              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/login" element={<Login/>} />
+              <Route path="/register" element={<Register/>} />
+              {/* nestedRoute  */}
 
-          <Route path="/dashboard" element={<Dashboard />}>
-            <Route path="makeAdmin" element={<MakeAdmin></MakeAdmin>} />
-            <Route path="addProduct" element={<AddProduct></AddProduct>} />
-            <Route path="payMentMethod" element={<PaymentMethod></PaymentMethod>} />
-            <Route path="MyOrders" element={<MyOrder></MyOrder>} />
-            <Route path="Reviews" element={<Reviews></Reviews>} />
-            {/* <Route path=":id" element={<ProductDisplay />} /> */}
-          </Route>
-        </Routes>
-      
+              <Route path="/dashboard" element={<Dashboard />}>
+                <Route path="makeAdmin" element={<MakeAdmin></MakeAdmin>} />
+                <Route path="addProduct" element={<AddProduct></AddProduct>} />
+                <Route path="payMentMethod" element={<PaymentMethod></PaymentMethod>} />
+                <Route path="MyOrders" element={<MyOrder></MyOrder>} />
+                <Route path="Reviews" element={<Reviews></Reviews>} />
+                {/* <Route path=":id" element={<ProductDisplay />} /> */}
+              </Route>
+            </Routes>
+          </BrowserRouter>
       </AuthProvider>
       
     </div >
