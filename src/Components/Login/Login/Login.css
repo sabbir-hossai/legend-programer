@@ -1,9 +1,14 @@
+.container {
+	background-color: #213203;
+	box-shadow: rgb(19, 58, 32) 0px 20px 30px -10px;
+	border-radius: 5px;
+}
 .card {
-	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+	box-shadow: rgb(9, 161, 60) 0px 20px 30px -10px;
 	border: none;
 	border-top: 5px solid rgb(19, 141, 80);
-	background: #212042;
-	color: #57557a;
+	background: #506f52;
+	color: #213203;
 }
 
 p {
@@ -16,7 +21,7 @@ p {
 	justify-content: center;
 	align-items: center;
 	border: none;
-	background: #2a284d;
+	background: #213203;
 	height: 40px;
 	width: 90px;
 }
@@ -73,16 +78,17 @@ p {
 .form-control {
 	border: 1px solid #57557a;
 	border-radius: 3px;
-	background: #212042;
+	background: #213203;
 	margin-bottom: 20px;
 	letter-spacing: 1px;
+	color: #fff;
 }
 
 .form-control:focus {
-	border: 1px solid #57557a;
+	border: 1px solid rgb(19, 141, 80);
 	border-radius: 3px;
 	box-shadow: none;
-	background: #212042;
+	background: rgb(102, 172, 107);
 	color: #fff;
 	letter-spacing: 1px;
 }
@@ -120,6 +126,9 @@ small {
 
 .far.fa-user {
 	font-size: 13px;
+}
+.register {
+	text-decoration: none;
 }
 
 @media (min-width: 767px) {
