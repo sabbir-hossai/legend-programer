@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import "./Login.css"
+import login from "../../../images/hotel img/login.png"
+import Navbar from '../../Homes/Navbar/Navbar';
 
 const Login = () => {
     const [loginData, setLoginData] = useState({});
@@ -17,9 +19,11 @@ const Login = () => {
         e.preventDefault();
     }
     return (
+        <>
+        <Navbar></Navbar>
         <div class="container p-3 mt-4">
-        <div class="row d-flex justify-content-center m-4 p-1">
-            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="row d-flex  mt-5 p-3 ">
+            <div class="col-6 col-md-8 col-lg-6 col-xl-5">
                 <div class="card py-3 }px-2 ">
                     <p class="text-center mb-3 mt-2">LOGIN</p>
                     <div class="row mx-auto ">
@@ -49,8 +53,12 @@ const Login = () => {
                     </form>
                 </div>
             </div>
+            <div class="col-6 col-md-8 col-lg-6 col-xl-5" >
+                <img  class="login_img" src={login} alt="" />
+            </div>
         </div>
         </div>
+        </>
     );
 };
 

@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
+import login from "../../../images/hotel img/login.png"
+import Navbar from '../../Homes/Navbar/Navbar';
 
 import "../Login/Login.css"
 
@@ -28,9 +30,11 @@ const Register = () => {
         e.target.reset();
     }
     return ( 
+        <>
+        <Navbar></Navbar>
         <div class="container p-3 mt-4">
-        <div class="row d-flex justify-content-center m-4 p-1">
-            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="row d-flex  m-5 p-2">
+            <div class="col-6 col-md-8 col-lg-6 col-xl-5">
                 <div class="card py-3 }px-2">
                     
                     
@@ -58,8 +62,12 @@ const Register = () => {
                     </form>
                 </div>
             </div>
+            <div class="col-6 col-md-8 col-lg-6 col-xl-5" >
+                <img  class="login_img" src={login} alt="" />
+            </div>
         </div>
     </div>
+    </>
     );
 };
 
