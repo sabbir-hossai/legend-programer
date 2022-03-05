@@ -1,7 +1,11 @@
-.container {
+/* .container {
 	background-color: #213203;
 	box-shadow: rgb(19, 58, 32) 0px 20px 30px -10px;
 	border-radius: 5px;
+} */
+.login_img {
+	width: 165% !important;
+	padding: 2%;
 }
 .card {
 	box-shadow: rgb(9, 161, 60) 0px 20px 30px -10px;
